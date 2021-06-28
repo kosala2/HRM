@@ -1,6 +1,9 @@
 //  import PatientControl from '../build/contracts/PatientControl.json';
 
-    var provider = 'http://40.121.85.175:8000'; //node 1
+     //var provider = 'http://40.121.85.175:8000'; //node 1
+    var provider = 'http://51.144.99.189:8000' //node 3
+    // var provider = 'http://52.236.177.4:8000' //node 4
+    // var provider = 'http://20.71.40.38:8000' //node 2
    // var provider="http://127.0.0.1:7545";
     var web3Provider = new Web3.providers.HttpProvider(provider);
     var web3 = new Web3(web3Provider);
@@ -14,8 +17,7 @@
     var instance;
 
 
-    //var contractAddress ='0x1028296e9D85761f93f200A9B106Eabeb02CF839'; 
-    var contractAddress = '0x23B486376459D831aBB6542C579EBe8916Cf536c';
+    var contractAddress = '0x9dA05C542A7327Dc36e1a1060D4165Ff339b7870';
     var contractABI;
 
     //read abi from rest call

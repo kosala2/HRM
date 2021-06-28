@@ -1,0 +1,58 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!--    <script type="text/javascript" src="/node_modules/web3/dist/web3.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+<!--     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/server.js"></script>
+    <script type="text/javascript" src="/register.js"></script>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+    <title> Patient Information on Blockchain</title>
+  </head>
+
+  <body>
+
+      <br><br>
+
+      <div class="container">
+        <h2> Register here</h2>
+            <table>
+
+              <tr>
+                  <td> <label class="label label-default" for="asset">Patient Id</label> </td>
+                  <td> <input type="text" class="form-control" id="_id" placeholder="Enter Patient ID"> </td>
+              </tr>
+	       <tr>
+                  <td> <label class="label label-default" for="asset">Password</label> </td>
+                  <td> <input type="text" class="form-control" id="_password" placeholder="Enter Password"> </td>
+              </tr>
+
+              <tr>
+                <td><button type="submit" id="register" class="btn btn-primary">Register</button></td>
+              <tr>
+	  
+
+               <br><br>
+            <table >
+              <tr>
+                  <td> <button type="button" id="viewInfo"  class="btn btn-primary">Get account details</button></td>
+              </tr>
+            </table>
+
+
+            <br><br>
+            <div id="accountInfo">
+            </div>
+
+
+            </table>
+
+      </div>
+
+  </body>
+
+</html>
