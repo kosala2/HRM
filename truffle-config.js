@@ -18,8 +18,8 @@
  *
  */
 const Web3 = require('web3');
-const HDWalletProvider = require('@truffle/hdwallet-provider');
-const developmentMnemonic = "lab option output please broken analyst club trust notice silk approve submit";
+//const HDWalletProvider = require('@truffle/hdwallet-provider');
+//const developmentMnemonic = "lab option output please broken analyst club trust notice silk approve submit";
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
@@ -41,7 +41,10 @@ module.exports = {
   networks: {
 
     rpc:{
-      host:"40.121.85.175",
+      host:"51.144.99.189", //node 3
+      //host: "40.121.85.175", //node 1
+      //host: "20.71.40.38", //node 2
+      //host: "52.236.177.4", //node 4
       port:8000
     },
 
@@ -52,7 +55,10 @@ module.exports = {
     // options below to some value.
     //
     development: {
-     host: "40.121.85.175",     // Localhost (default: none)
+      host:"51.144.99.189", //node 3
+      //host: "40.121.85.175", //node 1
+      //host: "20.71.40.38", //node 2
+      //host: "52.236.177.4", //node 4
      port: 8000,            // Standard Ethereum port (default: none)
      network_id: "15"      // Any network (default: none)
     },

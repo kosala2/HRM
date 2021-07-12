@@ -135,6 +135,7 @@ $(document).ready( async function () {
       // })
       // .on('error', console.error);
 
+<<<<<<< HEAD
       // instance.getPastEvents('eventCreatePatient',
       //                 {
       //                   fromBlock:0,
@@ -160,10 +161,31 @@ $(document).ready( async function () {
       //           );
 
 
+=======
+	 instance.getPastEvents('eventCreatePatient',
+                      {
+                        fromBlock:0,
+                        toBlock:'latest'
+                      },
+                      (error,events)=>{
+                        if(error){
+                          console.log(error);
+                        }
+                         let len=events.length;
+                         console.log("len",len);
 
+                         //for(let i=len-1; i>=0;i--){
+                            var tmp=events[len-1];
+                            var tid=tmp.returnValues['id'];
+                            var tstp=tmp.returnValues['timestamp'];
+                            var str = tid +" : "+ tstp;
+                            document.getElementById('patientInfo').innerHTML+=tid+"<br>";
+                         //}
+                      }
+                );
 
-
-
+  });
+>>>>>>> a2f4c5ae6c777ccbfba67d62a849e12b59048856
 
 
 });
