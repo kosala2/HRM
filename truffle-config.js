@@ -25,6 +25,7 @@ const developmentMnemonic = "lab option output please broken analyst club trust 
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+
 module.exports = {
 
   /**
